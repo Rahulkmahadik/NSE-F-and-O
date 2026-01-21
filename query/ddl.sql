@@ -36,4 +36,3 @@ CREATE TABLE trades (
 CREATE INDEX idx_trades_timestamp ON trades(trade_timestamp);
 CREATE INDEX idx_instruments_symbol ON instruments(symbol);
 CREATE INDEX idx_trades_exchange ON trades(exchange_id);
-CREATE INDEX idx_trades_timestamp_brin ON trades USING BRIN(trade_timestamp);
